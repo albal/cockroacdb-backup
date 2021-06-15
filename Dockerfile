@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 RUN apt-get -y update && \
-    apt-get -y install python3-pip curl && \
+    apt-get -y install python3-pip curl procps && \
     pip3 install awscli && \
     cd /tmp && \
     curl https://binaries.cockroachdb.com/cockroach-v21.1.1.linux-amd64.tgz | tar -xz && \
